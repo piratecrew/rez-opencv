@@ -33,4 +33,5 @@ def commands():
 
     if building:
         env.OpenCV_ROOT="{root}" # CMake Hint
+        env.CMAKE_PREFIX_PATH.append("{root}")
         env.CMAKE_MODULE_PATH.prepend("{root}/cmake")
